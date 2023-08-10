@@ -1,0 +1,41 @@
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.648);
+    text-align: center;
+    border: 1px solid rgb(109, 3, 3);
+    width: 240px;
+    height: 320px;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 9px #fffd;
+    border-radius: 10px;
+}
+.img{
+    width: 150px;
+    height: 200px;
+}
+.tNombre{
+    padding-top: 20px;
+    text-decoration: none;
+}
+.tTipos{
+    padding-top: 5px;
+}
+
+/* contenedor error */
+.contenedorError{
+    margin-top: -60px;
+    text-align: center;
+    color: rgb(231, 205, 12);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.card_error{
+    box-shadow: 0px 0px 5px 9px #fffd;
+}
