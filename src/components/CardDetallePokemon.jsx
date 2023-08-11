@@ -77,6 +77,7 @@ function CardDetallePokemon() {
     }
 
     const onClickDeletePokemon = (e) => {
+        if (id.length !== 36) return alert("no puedes eiminar un Pokemon de la api");
         if(window.confirm("Seguro que deseas eliminar este pokemon") === true){
             dispatch(delete_pokemon(id));
             window.location.replace("/home");
