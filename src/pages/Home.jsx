@@ -74,7 +74,7 @@ function Home() {
     <React.Fragment>
       <NavBar />
       <div className={s.content_home}>
-        <div className={s.content_filtros}>
+        
           <div className={s.contenedor_filtros}>
             <div className={s.f_origen + " " + s.filtros}>
               <label><h4>Origen</h4></label>
@@ -109,7 +109,7 @@ function Home() {
             </div>
 
           </div>
-        </div>
+        
         <div className={s.contenedorBtnPage}>
           <button
             onClick={backPage}
