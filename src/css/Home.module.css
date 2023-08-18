@@ -1,9 +1,13 @@
+/* contenedor del navar  */
+.contenedor_nabar{
+    width: 100%;
+}
+
 /* estilos para la home */
 .content_home{
     display: flex;
     flex-direction: column;
     align-content: center;
-    border: 2px solid salmon;
     width: 100%;
 }
 
@@ -50,13 +54,13 @@ button{
 /* ---------------Estilos para filtros----------- */
 .contenedor_filtros {
     display: flex;
-    border: 2px solid salmon;
     height: 120px;
     color: rgb(22, 23, 23);
     background-color: rgba(240, 248, 255, 0.733);
     padding-top: 20px;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
 .btn_filtros {

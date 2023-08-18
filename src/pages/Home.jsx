@@ -18,6 +18,8 @@ function Home() {
   const tipos = useSelector((state) => state.tipos);
   const {pokemons, mensaje} = useSelector((state) => state);
   const { origen, orden, tipo, filtrados, total} = useSelector((state) => state.pokemonsFiltrados);
+
+  console.log("QUE CONTIENE POKEMON: ", pokemons)
   
   const [back, setBack] = useState(0);
   const [next, setNext] = useState(12);
@@ -59,8 +61,10 @@ function Home() {
   }
 
   useEffect(() => {
-    dispatch(get_all_types());
-    dispatch(get_all_pokemons());
+    if(!tipos.length && !pokemons.length){
+      dispatch(get_all_types());
+      dispatch(get_all_pokemons());
+    }
     // eslint-disable-next-line
   }, []);
 
@@ -72,7 +76,9 @@ function Home() {
 
   return (
     <React.Fragment>
-      <NavBar />
+      <div className={s.contenedor_nabar}>
+        <NavBar />
+      </div>
       <div className={s.content_home}>
         
           <div className={s.contenedor_filtros}>

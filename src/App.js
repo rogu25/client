@@ -14,8 +14,8 @@ function App() {
     <React.Fragment>
       <div className="contenedor_home">
       <Routes>
-        <Route exact path='/inicio' element={<Inicio />} />
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Inicio />} />
+        <Route exact path='/home' element={<Home />} />
         <Route exact path='/detalle/:idPokemon' element={<DetallePokemon />} />
         <Route exact path='/formulario' element={ <FormPokemon/> } />
       </Routes>
