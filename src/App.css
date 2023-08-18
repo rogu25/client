@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html{
-  border: 2px solid blue;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -19,29 +15,39 @@ body {
   min-height: 100vh;
 }
 
-.contenedor_home {
-  /* border: 2px solid blue; */
-}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .content_home {
-    border: 2px solid blue;
+    border: 2px solid yellow;
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .content_home {
-    border: 2px solid yellow;
+    border: 2px solid red;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .content_home {
+    border: 2px solid blue;
+  }
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+  .content_home {
+    border: 2px solid green;
+  }
+}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+  .content_home {
+    border: 2px solid orange;
+  }
+}

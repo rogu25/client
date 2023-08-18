@@ -10,6 +10,8 @@ import {
 import { customFilter } from '../hooks/Custom';
 
 import s from "../css/Home.module.css";
+import '../App.css';
+
 import Loading from '../components/Loading';
 import NavBar from '../components/NavBar';
 
