@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { get_id_pokemon } from '../redux/action';
 
-import NavBar from "../components/NavBar";
 import CardDetallePokemon from "../components/CardDetallePokemon";
 
 function DetallePokemon() {
@@ -22,7 +21,6 @@ function DetallePokemon() {
 
   return (
     <React.Fragment>
-        <NavBar/>
         {
            Object.entries(detallePokemon).length !== 0 &&<CardDetallePokemon/>
         }

@@ -10,44 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../src/img/fondo03.jpg");
-  background-size: auto;
-  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .content_home {
-    border: 2px solid yellow;
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .content_home {
-    border: 2px solid red;
-  }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .content_home {
-    border: 2px solid blue;
-  }
-}
-
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-  .content_home {
-    border: 2px solid green;
-  }
-}
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  .content_home {
-    border: 2px solid orange;
-  }
-}

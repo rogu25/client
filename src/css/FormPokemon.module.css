@@ -1,24 +1,31 @@
 .content_form{
-    height: 90vh;
+    width: 100%;
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contenedor_form{
+    display: flex;
 }
 
 .titulo{
     background-color: rgba(255, 255, 255, 0.93);
     text-transform: uppercase;
+    text-align: center;
     margin: 0px 0px 20px 0px;
     padding: 10px;
     border-radius: 20px;
 }
 .formulario{
+    width: 500px;
     background-color: rgba(255, 255, 255, 0.93);
-    min-width: 50%;
     border: 1px solid #6d0303;
     text-align: center;
     display: flex;
+    flex-direction: column;
     text-align: center;
     box-shadow: 0px 0px 5px 9px #fffd;
     border-radius: 10px;
@@ -27,11 +34,10 @@
 .content_input{
     margin-top: 10px;
     padding: 20px;
-    width: 50%;
+    width: 200px;
     display: flex;
     flex-direction: column;
     font-size: 1.3rem;
-    position: relative;
 }
 
 .inputs_lbl{
@@ -41,8 +47,31 @@
     font-weight: bold;
 }
 
+.inputs_lbl_n{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: rgb(88, 89, 90);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.lbl_nombre{
+    margin-right: calc(120px / 4);
+}
+
+.inputs_n{
+    width: 120px;
+    padding: 3px;
+    border: 1px solid #16AD80;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1rem;
+    outline: none;
+}
 .inputs{
-    width: 40%;
+    width: 50px;
     margin-left: 5px;
     padding: 3px;
     border: 1px solid #16AD80;
@@ -54,7 +83,7 @@
 }
 
 .inputs_errors{
-    width: 40%;
+    width: 50px;
     margin-left: 5px;
     padding: 3px;
     border: 1px solid #f51414;
@@ -63,6 +92,18 @@
     font-size: 1rem;
     outline: none;
 }
+
+.inputs_errors_n{
+    width: 120px;
+    margin-left: 5px;
+    padding: 3px;
+    border: 1px solid #f51414;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1rem;
+    outline: none;
+}
+
 .errors{
     position: absolute;
     right: 0px;
@@ -86,7 +127,7 @@
 }
 
 .seleccion{
-    width: 50%;
+    width: 140px;
     text-align: center;
     padding: .4rem 1rem;
     border: 1px solid #16AD80;
@@ -104,7 +145,7 @@
 .btn_form{
     margin: 20px 0PX 0PX 20PX;
     padding: .4rem 1rem;
-    width: 22%;
+    width: 100px;
     border: 1px solid #16AD80;
     border-radius: 4px;
     background-color: #074331;
@@ -132,17 +173,20 @@
     word-break:break-all;
 }
 .content_img{
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 20px;
-    width: 50%;
     display: flex;
+    width: 200px;
+    height: 350px;
     flex-direction: column;
+    align-items: center;
     font-size: 1.3rem;
 }
 .load_img{
-    margin-top: 20px;
-    width: 380px;
-    height: 480px;
+    margin-top: 40px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .input_imagen{
@@ -153,7 +197,6 @@
     font-weight: bolder;
     font-size: 1rem;
     outline: none;
-    width: 90%;
 }
 
 .input_imagen_errors{
@@ -164,5 +207,76 @@
     font-weight: bolder;
     font-size: 1rem;
     outline: none;
+}
+
+.content_btn{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+
+/* // Small devices (landscape phones, 360px and up) */
+@media (max-width: 576px) {
+    
+    .formulario{
+        width: 350px;
+    }
+    
+    .inputs_lbl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: calc(150px / 4);
+        width: 100px; 
+    }
+
+    .input_imagen{
+        margin-top: 15px;
+        width: 100px;
+    }
+    .input_imagen_errors{
+        margin-top: 15px;
+        width: 100px;
+    }
+
+    .content_img{
+        width: 400px;
+        height: 380px;
+    }
+    .load_img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        margin-right: 30px;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+ 
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+   
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+   
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+   
 }
 

@@ -20,8 +20,6 @@ function Home() {
   const tipos = useSelector((state) => state.tipos);
   const {pokemons, mensaje} = useSelector((state) => state);
   const { origen, orden, tipo, filtrados, total} = useSelector((state) => state.pokemonsFiltrados);
-
-  console.log("QUE CONTIENE POKEMON: ", pokemons)
   
   const [back, setBack] = useState(0);
   const [next, setNext] = useState(12);
@@ -69,7 +67,8 @@ function Home() {
     }
     // eslint-disable-next-line
   }, []);
-
+  
+  
   useEffect(() => {
     let newFiltros = customFilter(filtros);
     dispatch(filtrosPokemons(newFiltros));

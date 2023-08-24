@@ -32,22 +32,22 @@ function NavBar() {
       dispatch(get_all_pokemons());
     }
   };
-
+  
   return (
     <div className={s.contenedor_navbar}>
-      <div className={s.nav_logo}>
+      <div className={s.content_logo}>
         <NavLink to={"/"}>
           <img src={logo_rc} alt="" className={s.img_logo} />
         </NavLink>
       </div>
-      <div className={s.nav_busqueda}>
-        <input type="button" value="Buscar" className={s.btn_buscar} onClick={onClickBuscar} />
+      <div className={s.content_busqueda}>
+        <input type="button" value={"buscar"} className={s.btn_buscar} onClick={onClickBuscar} />
         <input type="text" className={s.input_buscar} placeholder='nombre del pokemon...' onChange={onChangeInputBuscar} />
         <span className={s.error}>{error}</span>
       </div>
-      <div className={s.link_crear}>
+      <div className={s.content_crear}>
         <NavLink to={"/formulario"}>
-        <input type="button" value="Crear Pokemon" className={s.btn_buscar}/>
+        <input type="button" value={"crear"} className={s.btn_crear}/>
         </NavLink>
       </div>
     </div>
