@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.239c811f.chunk.css",
+    "main.js": "/static/js/main.bf332221.chunk.js",
+    "main.js.map": "/static/js/main.bf332221.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f4ad4a27.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f4ad4a27.js.map",
+    "static/js/2.9199f6ee.chunk.js": "/static/js/2.9199f6ee.chunk.js",
+    "static/js/2.9199f6ee.chunk.js.map": "/static/js/2.9199f6ee.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.239c811f.chunk.css.map": "/static/css/main.239c811f.chunk.css.map",
+    "static/js/2.9199f6ee.chunk.js.LICENSE.txt": "/static/js/2.9199f6ee.chunk.js.LICENSE.txt",
+    "static/media/Inicio.module.css": "/static/media/fondo01.845e0ab6.jpg",
+    "static/media/App.css": "/static/media/fondo03.10f84e70.jpg",
+    "static/media/logo-rc.cd152f1c.png": "/static/media/logo-rc.cd152f1c.png",
+    "static/media/Loading.module.css": "/static/media/pokebola.d6144951.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4ad4a27.js",
+    "static/js/2.9199f6ee.chunk.js",
+    "static/css/main.239c811f.chunk.css",
+    "static/js/main.bf332221.chunk.js"
+  ]
+}
