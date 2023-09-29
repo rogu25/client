@@ -14,7 +14,7 @@ export const DELETE_POKEMON = "DELETE_POKEMON";
 
 export const get_all_pokemons = () => async (dispatch) => {
     try {
-        const getAllPokemons = await axios.get("https://render-test-api-ehjv.onrender.com/pokemons");
+        const getAllPokemons = await axios.get("https://api-pokemon-flame.vercel.app/pokemons");
         return dispatch({
             type: ALL_POKEMONS,
             payload: getAllPokemons.data
@@ -29,7 +29,7 @@ export const get_all_pokemons = () => async (dispatch) => {
 
 export const get_name_pokemon = (name) => async (dispatch) => {
     try {
-        const getNamePokemon = await axios.get(`https://render-test-api-ehjv.onrender.com/pokemons/name?nombre=${name}`);
+        const getNamePokemon = await axios.get(`https://api-pokemon-flame.vercel.app/pokemons/name?nombre=${name}`);
         return dispatch({
             type: GET_NAME_POKEMON,
             payload: getNamePokemon.data
@@ -44,7 +44,7 @@ export const get_name_pokemon = (name) => async (dispatch) => {
 
 export const get_id_pokemon = (id) => async (dispatch) => {
     try {
-        const getIdPokemon = await axios.get(`https://render-test-api-ehjv.onrender.com/pokemons/${id}`);
+        const getIdPokemon = await axios.get(`https://api-pokemon-flame.vercel.app/pokemons/${id}`);
         return dispatch({
             type: GET_ID_POKEMON,
             payload: getIdPokemon.data
@@ -59,7 +59,7 @@ export const get_id_pokemon = (id) => async (dispatch) => {
 
 export const update_pokemon = (id, obj) => async (dispatch) => {
     try {
-        const updatePokemon = await axios.put(`https://render-test-api-ehjv.onrender.com/pokemons/${id}`, obj);
+        const updatePokemon = await axios.put(`https://api-pokemon-flame.vercel.app/pokemons/${id}`, obj);
         return dispatch({
             type: UPDATE_POKEMON,
             payload: updatePokemon.data
@@ -74,7 +74,7 @@ export const update_pokemon = (id, obj) => async (dispatch) => {
 
 export const create_pokemon = (obj) => async (dispatch) => {
     try {
-        const createPokemon = await axios.post(`https://render-test-api-ehjv.onrender.com/pokemons`, obj);
+        const createPokemon = await axios.post(`https://api-pokemon-flame.vercel.app/pokemons`, obj);
         return dispatch({
             type: CREATE_POKEMON,
             payload: createPokemon.data
@@ -89,7 +89,7 @@ export const create_pokemon = (obj) => async (dispatch) => {
 
 export const delete_pokemon = (id) => async (dispatch) => {
     try {
-        const deletePokemon = await axios.delete(`https://render-test-api-ehjv.onrender.com/pokemons/${id}`);
+        const deletePokemon = await axios.delete(`https://api-pokemon-flame.vercel.app/pokemons/${id}`);
         return dispatch({
             type: DELETE_POKEMON,
             payload: deletePokemon.data
@@ -107,7 +107,7 @@ export const delete_pokemon = (id) => async (dispatch) => {
 
 export const get_all_types = () => async (dispatch) => {
     try {
-        const getAllTypes = await axios.get("https://render-test-api-ehjv.onrender.com/types");
+        const getAllTypes = await axios.get("https://api-pokemon-flame.vercel.app/types");
         return dispatch({
             type: ALL_TYPES,
             payload: getAllTypes.data
