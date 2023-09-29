@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import s from "../css/FormPokemon.module.css";
 
 import pokebola from "../img/pokebola.png";
-import { get_all_types, create_pokemon } from "../redux/action/index";
+import { get_all_types, create_pokemon, get_all_pokemons } from "../redux/action/index";
 
 import validation from '../hooks/validator';
 
@@ -75,6 +75,10 @@ function FormPokemon() {
     setActivar(true);
     setErrors(validation(inputs))
   };
+
+  const onClick_salir = () => {
+    dispatch(get_all_pokemons());
+  }
 
   useEffect(() => {
     dispatch(get_all_types());
@@ -177,7 +181,7 @@ function FormPokemon() {
             <button type="submit" className={s.btn_form} disabled={activar}>Grabar</button>
             <button type="button" className={s.btn_form} onClick={onClickLimpiar} disabled={!inputs.nombre.length && true}>Limpiar</button>
             <NavLink to={"/home"}>
-              <button type='button' className={s.btn_form}>Salir</button>
+              <button type='button' className={s.btn_form} onClick={onClick_salir}>Salir</button>
             </NavLink>
           </div>
         </form>
